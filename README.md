@@ -4,6 +4,7 @@ Python CLI app for basic retail inventory tracking, stock management, and identi
 This project is made on retail and e-commerce domain.
 # Features
 This python application does the following things
+
 1)Product creation: Allows the user to create the product by assigning a unique id ITMxxx.
 
 2)inventory: Shows all the inventory that is available.
