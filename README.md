@@ -25,8 +25,8 @@ This project is written in python.
             python main.py
 # Technical Details & Architecture
 This project was built to demonstrate several core programming concepts:
+Core Concepts Demonstrated:
 
-# Core Concepts Demonstrated:
 1)Object-Oriented Programming (OOP): Uses the Product class to model real-world data, including dedicated methods (__str__, to_dict) for printing and serialization.
 
 2)Data Persistence (File I/O): Utilizes Python's standard json library for structured saving and loading of the inventory state.
