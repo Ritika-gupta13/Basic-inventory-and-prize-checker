@@ -25,6 +25,7 @@ This project is written in python.
             python main.py
 # Technical Details & Architecture
 This project was built to demonstrate several core programming concepts:
+
 Core Concepts Demonstrated:
 
 1)Object-Oriented Programming (OOP): Uses the Product class to model real-world data, including dedicated methods (__str__, to_dict) for printing and serialization.
