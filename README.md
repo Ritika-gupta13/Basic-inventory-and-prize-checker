@@ -51,8 +51,7 @@ The project is minimalist and fully contained within a few files:
 # Author
 Ritika Gupta
 
-            
-
-
-
+# Screenshots of the working program
+<img width="1073" height="1044" alt="image" src="https://github.com/user-attachments/assets/54ada6bf-e054-4060-b898-19ce585a9a8e" />
+<img width="1029" height="954" alt="image" src="https://github.com/user-attachments/assets/e5f5178b-d371-46f8-a7ad-831f8be5c9eb" />
 
