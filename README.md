@@ -17,8 +17,11 @@ This python application does the following things
 This project is written in python.
 # Running the Application
 1)Download: Download the inventory_manager.py file to a local folder.
+
 2)Open Terminal: Navigate to that folder using your terminal or command prompt.
+
 3)Execute: Run the file using the Python interpreter:
+
             python main.py
 # Technical Details & Architecture
 This project was built to demonstrate several core programming concepts:
