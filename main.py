@@ -6,21 +6,21 @@ INVENTORYFILE = 'inventory_data.json'
 LOW_STOCKTHRESHOLD = 10
 
 class Product:
-    def __init__(self, name: str, price: float, stock: int, itemcd: str):
+    def __init__(self, name: str, price: float, stock: int, item_code: str):
         self.name = name
         self.price = price
         self.stock = stock
-        self.itemcode = itemcd 
+        self.item_code = item_code
 
     def __str__(self):
-        return f"Code: {self.itemcode.ljust(6)} | Name: {self.name.ljust(20)} | Price: ${self.price:.2f} | Stock: {self.stock}"
+        return f"Code: {self.item_code.ljust(6)} | Name: {self.name.ljust(20)} | Price: Rs{self.price:.2f} | Stock: {self.stock}"
 
     def to_dict(self):
         return {
             "name": self.name,
             "price": self.price,
             "stock": self.stock,
-            "item_code": self.itemcode
+            "item_code": self.item_code
         }
 
 def load_inventory():
@@ -64,7 +64,7 @@ def add_product(inventory):
     
     while True:
         try:
-            price = float(input("Enter price (e.g., 19.99): $"))
+            price = float(input("Enter price (e.g., 19.99): Rs"))
             if price <= 0:
                 print("Price must be positive.")
                 continue
@@ -114,7 +114,7 @@ def update_stock_and_price(inventory):
         print(f"Product with ItemCode '{code_to_update}' not found.")
         return
 
-    print(f"\n--- Updating Product: {product_found.name} (Current Stock: {product_found.stock}, Price: ${product_found.price:.2f}) ---")
+    print(f"\n--- Updating Product: {product_found.name} (Current Stock: {product_found.stock}, Price: Rs{product_found.price:.2f}) ---")
 
     while True:
         new_stock = input("Enter new stock level (leave blank to skip): ").strip()
@@ -131,7 +131,7 @@ def update_stock_and_price(inventory):
             print("Invalid stock number.")
 
     while True:
-        new_price = input("Enter new price (leave blank to skip): $").strip()
+        new_price = input("Enter new price (leave blank to skip): Rs").strip()
         if not new_price:
             break
         try:
@@ -156,7 +156,7 @@ def view_low_stock(inventory):
         return
         
     for product in low_stock_items:
-        print(f" LOW STOCK: {product.name.ljust(20)} | Code: {product.item_code.ljust(6)} | Stock: {product.stock}")
+        print(f"LOW STOCK: {product.name.ljust(20)} | Code: {product.item_code.ljust(6)} | Stock: {product.stock}")
 
 def inventory_manager_app():
     inventory = load_inventory()
