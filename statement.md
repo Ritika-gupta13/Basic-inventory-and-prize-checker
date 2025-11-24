@@ -2,7 +2,7 @@
 
 # Problem Statement
 
-Small retail businesses, particularly those operating in e-commerce or small physical stores, require a simple and reliable tool to manage their product stock and pricing. The lack of an efficient system can lead to time-consuming manual checks, potential stockouts (missed sales), or over-ordering. The core problem is the need for a management tool that digitally tracks stock levels and automatically flags products needing reorder.
+Small retail businesses, particularly those operating in e-commerce or small physical stores, require a simple and reliable tool to manage their product stock and pricing. The lack of an efficient system can lead to time-consuming manual checks or over-ordering. The core problem is the need for a management tool that digitally tracks stock levels.
 
 # Scope of the Project
 
@@ -34,7 +34,7 @@ The application will provide the following essential features:
 
 Add Product: Allows the user to input a product name, initial stock, and price, with an automatic, unique ItemCode generation (e.g., ITM001).
 
-View All Inventory: Displays a formatted, comprehensive list of all products, their codes, prices, and stock levels.
+View All Inventory: Displays a list of all products, their codes, prices, and stock levels.
 
 Update Stock/Price: Enables the manager to modify the price and/or stock level of an existing product using its unique ItemCode.
 
