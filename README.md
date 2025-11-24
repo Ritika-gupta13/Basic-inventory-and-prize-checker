@@ -42,7 +42,9 @@ Item Code Format: ITM### (e.g., ITM001, ITM002, etc.)
 The project is minimalist and fully contained within a few files:
 
 # Inventory_manager/
+
  ├── main.py   # The Python application code.
+ 
  └── README.md # This guide.
 
 # Author
